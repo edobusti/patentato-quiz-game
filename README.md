@@ -1,6 +1,6 @@
 # Italian Driving License Exam Simulator
 
-A React.js web app simulating an Italian driving license exam. Users can select from various game modes with customizable settings for the number of questions, allowed errors, and time limits, providing an interactive way to prepare for the test. State management is handled with the useReducer hook, and the Context API is used to share state across components, eliminating prop drilling and ensuring a scalable architecture.
+A React.js web app that simulates an Italian driving license exam. Users can choose from various game modes with customizable settings for the number of questions, allowed errors, and time limits, providing an interactive way to prepare for the test. State management is handled using the useReducer hook, while the Context API facilitates state sharing across components, eliminating prop drilling and ensuring a scalable architecture.
 
 ## Features
 
