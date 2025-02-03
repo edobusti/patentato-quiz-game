@@ -1,0 +1,262 @@
+.start-screen {
+  width: 100%;
+  margin: 0 auto;
+  height: max-content;
+}
+
+.introduction {
+  text-align: center;
+  letter-spacing: 0.5px;
+  font-size: 2.2rem;
+  margin-bottom: 4.8rem;
+}
+
+.btn__mode-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 6rem;
+  gap: 4.8rem;
+  width: 100%;
+}
+
+.btn__mode-container {
+  padding: 2.4rem;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 1.2rem;
+  row-gap: 1.2rem;
+}
+
+.img__mode {
+  border-radius: 1rem;
+  width: 6rem;
+}
+
+.btn__mode {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  grid-column: -1 / 1;
+  background: linear-gradient(#f73e3e, #df1717);
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #fff;
+  padding: 1.2rem 2.4rem;
+  border-radius: 3rem;
+  position: relative;
+  transition: 30ms;
+}
+
+.btn__mode:hover {
+  transform: scale(1.03);
+}
+
+.btn__mode img {
+  height: 2rem;
+}
+
+.easy-active {
+  padding: 2.2rem;
+  border: 0.2rem solid #00b600;
+  background-color: #00b60030;
+}
+
+.normal-active {
+  padding: 2.2rem;
+  border: 0.2rem solid #d6d300;
+  background-color: #d6d30030;
+}
+
+.hard-active {
+  padding: 2.2rem;
+  border: 0.2rem solid #f60202;
+  background-color: #f6020230;
+}
+
+.rules p {
+  letter-spacing: 0.5px;
+  font-size: 1.5rem;
+  margin-bottom: 0.2rem;
+}
+
+.rules span {
+  color: #f73e3e;
+}
+
+.rules span:last-child {
+  display: none;
+}
+
+.btn__start {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 1.2rem;
+  grid-column: -1 / 1;
+  background: linear-gradient(#f73e3e, #df1717);
+  border: none;
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #fff;
+  padding: 1.2rem 2.4rem;
+  border-radius: 3rem;
+  position: relative;
+  transition: 50ms;
+  animation: fade-in 200ms linear;
+}
+
+.btn__start:hover {
+  transform: scale(1.05);
+}
+
+.btn__start img {
+  height: 3.2rem;
+}
+
+@media (max-width: 75em) {
+}
+
+@media (max-width: 64em) {
+  .introduction {
+    font-size: 2rem;
+
+    margin-bottom: 3.4rem;
+  }
+
+  .rules p {
+    font-size: 1.5rem;
+  }
+
+  .btn__mode-section {
+    gap: 1.4rem;
+  }
+}
+
+@media (max-width: 57.5em) {
+  .btn__mode-section {
+    gap: 0;
+  }
+
+  .btn__mode-container {
+    padding: 1.2rem;
+  }
+
+  .rules p {
+    font-size: 1.4rem;
+  }
+
+  .rules span:first-child {
+    display: none;
+  }
+
+  .rules span:last-child {
+    display: inline-block;
+  }
+
+  .img__mode {
+    border-radius: 1rem;
+    width: 5.4rem;
+  }
+
+  .btn__mode {
+    font-size: 1.6rem;
+  }
+
+  .btn__mode img {
+    height: 1.6rem;
+  }
+}
+
+@media (max-width: 48em) {
+  .introduction {
+    font-size: 1.8rem;
+    margin-bottom: 3.4rem;
+  }
+
+  .btn__mode-section {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1.8rem;
+  }
+
+  .btn__mode-container {
+    width: 24rem;
+    margin: 0 auto;
+    padding: 1.2rem;
+  }
+
+  .img__mode {
+    width: 6rem;
+  }
+}
+
+@media (max-width: 38em) {
+  .introduction {
+    margin: 0 auto;
+    padding-bottom: 3.2rem;
+
+    font-size: 1.6rem;
+  }
+
+  .btn__mode-section {
+    grid-template-columns: 1fr;
+    row-gap: 0;
+  }
+
+  .btn__mode-container {
+    width: 32rem;
+    margin: 0 auto;
+    column-gap: 0.2rem;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 1.2rem;
+  }
+
+  .btn__mode-container:nth-child(2) {
+    position: relative;
+    bottom: 5rem;
+  }
+
+  .btn__mode-container:nth-child(3) {
+    position: relative;
+    bottom: 9.6rem;
+  }
+
+  .btn__mode {
+    position: relative;
+    bottom: 5.6rem;
+    font-size: 1.4rem;
+    grid-column: 2;
+    width: 17rem;
+  }
+
+  .img__mode {
+    width: 11rem;
+    grid-row: -1 / 1;
+  }
+
+  .rules span:first-child {
+    display: inline-block;
+  }
+
+  .rules span:last-child {
+    display: none;
+  }
+
+  .btn__mode img {
+    height: 1.4rem;
+  }
+}
+
+@media (max-width: 28em) {
+  .introduction {
+    text-align: left;
+  }
+}

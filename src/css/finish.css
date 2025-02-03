@@ -1,0 +1,249 @@
+.overlay__container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #000000e0;
+  z-index: 2;
+  animation: fade-in 250ms;
+}
+
+.finish__window {
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  column-gap: 3.6rem;
+  row-gap: 3.6rem;
+  margin: 0 auto;
+  position: absolute;
+  padding: 3.2rem;
+  border-radius: 3rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  color: #000;
+  width: 88rem;
+}
+
+.finish__window > img {
+  width: 100%;
+  border-radius: 3rem;
+}
+
+.finish__title-success {
+  margin-top: 2.4rem;
+  margin-left: -0.6rem;
+  margin-bottom: 1.2rem;
+  font-size: 9rem;
+  color: #f73e3e;
+}
+
+.finish__title-failure {
+  margin-top: 2.4rem;
+  margin-left: -0.6rem;
+  margin-bottom: 1.2rem;
+  font-size: 9rem;
+  color: #28b828;
+}
+
+.finish__description {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.3px;
+  margin-bottom: 2.4rem;
+  max-width: 70%;
+}
+
+.resume__window {
+  border-radius: 1rem;
+  max-height: 24rem;
+  overflow: scroll;
+  overflow-x: hidden;
+  grid-column: -1/1;
+  box-shadow: inset 0 0 2rem -0.4rem #74747455;
+}
+
+.resume__window::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+.resume__window::-webkit-scrollbar-track {
+  background-color: #e9e9e9;
+  border-radius: 10px;
+}
+
+.resume__window::-webkit-scrollbar-thumb {
+  background: rgb(34, 104, 255);
+  border-radius: 10px;
+}
+
+.answered-quiz__item {
+  width: 100%;
+  padding: 2.4rem 3.2rem;
+  display: flex;
+
+  gap: 1.6rem;
+}
+
+.answered-quiz__item.failure {
+  background-color: #27ec0030;
+}
+
+.answered-quiz__item.success {
+  background-color: #ec000020;
+}
+
+.answered-quiz__item p {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.answered-quiz__item p span {
+  font-weight: 700;
+}
+
+.answered-quiz__img {
+  max-width: 10rem;
+  max-height: 10rem;
+}
+
+.btn__finish {
+  width: fit-content;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  background: linear-gradient(#f73e3e, #df1717);
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #fff;
+  padding: 1.2rem 2.4rem;
+  border: none;
+  border-radius: 3rem;
+  position: relative;
+  transition: 50ms;
+  animation: fade-in 150ms linear;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn__finish:hover {
+  transform: scale(1.05);
+}
+
+.btn__finish img {
+  height: 1.2rem;
+}
+
+@media (max-width: 75em) {
+  .finish__title-failure,
+  .finish__title-success {
+    margin-bottom: 0;
+  }
+
+  .finish__description {
+    margin-bottom: 1.2rem;
+  }
+
+  .finish__window {
+    width: 75rem;
+  }
+}
+
+@media (max-width: 64em) {
+  .finish__window {
+    width: 64rem;
+  }
+
+  .finish__title-failure,
+  .finish__title-success {
+    margin-top: 0;
+    margin-left: -0.2rem;
+    margin-bottom: 0;
+    font-size: 6rem;
+  }
+
+  .finish__description {
+    margin-bottom: 1.2rem;
+    max-width: 100%;
+  }
+
+  .answered-quiz__img {
+    max-width: 6rem;
+    max-height: 6rem;
+  }
+}
+
+@media (max-width: 57.5em) {
+}
+
+@media (max-width: 45em) {
+  .finish__window {
+    width: 45rem;
+  }
+
+  .finish__title-failure,
+  .finish__title-success {
+    margin-bottom: 0;
+    font-size: 4rem;
+  }
+
+  .finish__description {
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+    max-width: 100%;
+  }
+
+  .answered-quiz__img {
+    max-width: 6rem;
+    max-height: 6rem;
+  }
+
+  .btn__finish {
+    font-size: 1rem;
+    padding: 0.8rem 2rem;
+  }
+
+  .resume__window {
+    width: 38.6rem;
+  }
+}
+
+@media (max-width: 38em) {
+  .finish__window {
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto 1fr;
+    width: 32rem;
+    max-height: 90vh;
+  }
+
+  .finish__window > img {
+    width: 100%;
+  }
+
+  .finish__title-failure,
+  .finish__title-success {
+    margin-top: -2rem;
+    font-size: 4rem;
+  }
+
+  .resume__window {
+    width: 25.6rem;
+  }
+
+  .answered-quiz__img {
+    max-width: 8rem;
+    max-height: 8rem;
+  }
+
+  .answered-quiz__item {
+    flex-direction: column;
+  }
+}

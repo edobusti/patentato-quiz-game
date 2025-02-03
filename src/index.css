@@ -1,0 +1,101 @@
+@import url("css/start.css");
+@import url("css/quiz.css");
+@import url("css/finish.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 62.5%;
+  color: #fff;
+  background-color: #343a40;
+}
+
+.App {
+  padding-top: 4rem;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  max-width: 98rem;
+  padding: 4rem;
+  margin: 0 auto;
+}
+
+.logo {
+  display: block;
+  position: relative;
+  left: -0.4rem;
+  margin: 0 auto;
+  width: 100%;
+  animation: fade-in 1s linear;
+}
+
+.main {
+  width: 100%;
+  padding-top: 6rem;
+  margin: 0 auto;
+  animation: fade-in 1s linear;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+  position: absolute;
+  bottom: 2.4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.2rem;
+  animation: fade-in 1s linear;
+}
+
+.footer-icon {
+  height: 1.4rem;
+  cursor: pointer;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 75em) {
+}
+
+@media (max-width: 64em) {
+  .main {
+    padding-top: 6rem;
+  }
+}
+
+@media (max-width: 57.5em) {
+  .App {
+    padding-top: 0;
+  }
+
+  .main {
+    padding-top: 3.6rem;
+  }
+
+  footer {
+    display: none;
+  }
+}
+
+@media (max-width: 38em) {
+  html {
+    overflow-x: hidden;
+  }
+}
