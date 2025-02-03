@@ -11,6 +11,8 @@ A React.js web app simulating an Italian driving license exam. Users can select 
 
 ## Additional Features
 
+- **Reusable Components**: Built modular, reusable components to ensure scalability and maintainability of the app.
+- **Custom Hooks**: Created custom hooks to encapsulate logic and improve code reusability.
 - **Efficient State Management**: Utilized the `useReducer` hook for managing complex state and the Context API for sharing state across components.
 - **No Prop Drilling**: By using Context API, the app eliminates the need for prop drilling, making the architecture more scalable and maintainable.
 - **Pixel-perfect design**: Every detail is crafted with precision to ensure a flawless user experience.
